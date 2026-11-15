@@ -8,7 +8,7 @@ released, never changed.
 ## Setup
 
 1. Docker Desktop running, with the pinned image:
-   `docker pull logronoide/atarist-toolkit-docker-x86_64:1.4.0`.
+   `docker pull logronoide/atarist-toolkit-docker-x86_64:1.5.0`.
 2. Hatari 2.6.1 (`/usr/local/bin/hatari`), mtools (`mcopy`), `rsync`, Python 3.
 3. `cp tools/dev/dev.cfg.example tools/dev/dev.cfg` and adjust the paths: Hatari, one TOS image
    per test machine, and a checkout of `sidecartridge/atari-hd`. Relative paths are relative to
@@ -135,7 +135,7 @@ off from there, which keeps instruction traces bounded.
   instruction cut short by the end of the file, and prints an indexed displacement as 16 hex
   digits without `0x`. `listing2vasm.py` copes with all three; give it listings from
   `disasm.sh`.
-- `stcmd` follows `latest`, a different image from the pinned `1.4.0`, and passes its arguments
+- `stcmd` follows `latest`, a different image from the pinned `1.5.0`, and passes its arguments
   unquoted: use `toolchain.sh`.
 - Hatari loads `~/Library/Application Support/Hatari/hatari.cfg` unless `HOME` points
   elsewhere; the harness gives each run its own `HOME`.

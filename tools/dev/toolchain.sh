@@ -6,7 +6,7 @@
 # Diego's atarist-toolkit-docker, pinned by tag and digest (the tag the
 # siblings pin): vasm 2.0f (vasmm68k_mot), vlink 0.18a, binutils 2.30
 # (m68k-atari-mint-objdump). `stcmd` is not used: it follows `latest`.
-ATARI_IMAGE="logronoide/atarist-toolkit-docker-x86_64:1.4.0@sha256:016434131cf53f627c365e55262845fba53f30a7de87a1f122d58f8fa6aeeebe"
+ATARI_IMAGE="logronoide/atarist-toolkit-docker-x86_64:1.5.0@sha256:5b5806bfc6c84c2cf2cebf34f13c7ea472d88d8d02ccc9f0ad71572654e215ad"
 
 REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 
