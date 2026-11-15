@@ -16,6 +16,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: The pinned toolchain
-      run: docker pull logronoide/atarist-toolkit-docker-x86_64:1.4.0@sha256:016434131cf53f627c365e55262845fba53f30a7de87a1f122d58f8fa6aeeebe
+      run: docker pull logronoide/atarist-toolkit-docker-x86_64:1.5.0@sha256:5b5806bfc6c84c2cf2cebf34f13c7ea472d88d8d02ccc9f0ad71572654e215ad
     - name: Build and check the site
       run: python3 tools/site/build_site.py --out _site --no-snapshots --check

@@ -92,7 +92,7 @@ removed from the history before the repository went public.
 ## Commands
 
 Everything is in `tools/dev/` (details and examples in `tools/dev/README.md`). Once per
-machine: Docker running with `logronoide/atarist-toolkit-docker-x86_64:1.4.0`, and
+machine: Docker running with `logronoide/atarist-toolkit-docker-x86_64:1.5.0`, and
 `cp tools/dev/dev.cfg.example tools/dev/dev.cfg` (paths to Hatari, the TOS images, `../atari-hd`).
 
 ```
@@ -177,7 +177,7 @@ git-ignored** and lives only on this Mac.
 - **Docker Desktop can serve a container a file the host has just rewritten in place, at its old
   length** (vasm once assembled a source cut off mid-line). Run the toolchain only through
   `tools/dev/toolchain.sh` (`tc_stage` hands the container a fresh copy), never `stcmd`, which
-  also follows `latest` instead of the pinned `1.4.0`.
+  also follows `latest` instead of the pinned `1.5.0`.
 - **Hatari loads its saved configuration** (`~/Library/Application Support/Hatari/hatari.cfg`)
   unless `HOME` points elsewhere; the harness gives each run its own. Control-socket keys go in
   hex (`0x39`): a single character is typed as that character.
